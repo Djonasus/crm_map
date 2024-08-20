@@ -45,4 +45,9 @@
 // //     }
 // // );
 
-alert("hello world!")
+$('<button id="find-user">Найти пользователя</button>').appendTo("body");
+$('body').on("click", "#find-user", on_click);
+
+function on_click() {
+    alert("Hello!");
+}
